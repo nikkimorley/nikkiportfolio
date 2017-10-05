@@ -1,5 +1,42 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow:400,500,600,700");
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 16px;
+  position: relative; }
+
+a {
+  color: #0094b2; }
+  a:hover {
+    color: #016678; }
+
+.module {
+  padding: 25px 0;
+  height: 500px; }
+
+#banner {
+  background: url("../img/banner.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  font-weight: 500;
+  text-align: center; }
+  #banner .name {
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 3rem; }
+  #banner .title {
+    color: #29c0d1;
+    font-size: 2.5rem; }
+  #banner .tagline {
+    font-size: 1.5rem; }
+
+#skills {
+  background: #016678; }
+
+#contact {
+  background: #0094b2; }
+
+@media (min-width: 768px) {
+  #mainNav .navbar-nav {
+    justify-content: flex-end; } }
 
 /*# sourceMappingURL=nikkiportfolio.css.map */

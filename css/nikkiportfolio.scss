@@ -1,8 +1,93 @@
+// Import
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,500,600,700');
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
-$font: 'Roboto', sans-serif;
+//Variables
+$font: 'Archivo Narrow', sans-serif;
+$ltteal: #29c0d1;
+$teal: #0094b2;
+$dkteal: #016678;
+$ltblue: #5bc6e6;
+$blue: #1d7ac0; 
+$dkblue: #015172;
 
+//Global Styles
 body {
 	font-family: $font;
+	font-size: 16px;
+	position: relative;
+}
+
+a {
+	color: $teal;
+	&:hover {
+		color: $dkteal;
+	}
+}
+
+.module {
+	padding: 25px 0;
+	height: 500px;
+}
+
+
+
+#banner {
+	background: url("../img/banner.jpg") center / cover no-repeat;
+	background-attachment: fixed;
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	.name {
+		color: #ddd;
+		text-transform: uppercase;
+		font-size: 3rem;
+	}
+	.title {
+		color: $ltteal;
+		font-size: 2.5rem;
+	}
+	.tagline {
+		font-size: 1.5rem;
+	}
+}
+
+#about {
+
+}
+
+#skills {
+	background: $dkteal;
+}
+
+#work {
+
+}
+
+#contact {
+	background: $teal;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+//Using this as a breakpoint in nikki.js
+@media (min-width: 768px) {
+	#mainNav .navbar-nav {
+		justify-content: flex-end;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }
