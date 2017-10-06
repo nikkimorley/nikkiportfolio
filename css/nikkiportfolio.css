@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow:400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,600");
 body {
-  font-family: "Archivo Narrow", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   position: relative; }
 
@@ -10,8 +10,9 @@ a {
     color: #016678; }
 
 .module {
-  padding: 25px 0;
-  height: 500px; }
+  padding: 35px 0; }
+  .module h2 {
+    text-align: center; }
 
 #banner {
   background: url("../img/banner.jpg") center/cover no-repeat;
@@ -20,23 +21,28 @@ a {
   font-weight: 500;
   text-align: center; }
   #banner .name {
-    color: #ddd;
     text-transform: uppercase;
-    font-size: 3rem; }
+    font-size: 5rem;
+    font-weight: 200; }
   #banner .title {
-    color: #29c0d1;
     font-size: 2.5rem; }
   #banner .tagline {
     font-size: 1.5rem; }
 
 #skills {
   background: #016678; }
+  #skills #skillsNav {
+    background: #fff; }
+  #skills #skillsNavContent {
+    background: pink;
+    padding: 15px; }
 
 #contact {
   background: #0094b2; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #mainNav .navbar-nav {
-    justify-content: flex-end; } }
+    justify-content: flex-end;
+    width: 100%; } }
 
 /*# sourceMappingURL=nikkiportfolio.css.map */

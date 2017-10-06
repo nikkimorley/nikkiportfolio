@@ -21,7 +21,7 @@
   </head>
   <body data-spy="scroll" data-target="#mainNav">
   	<!-- banner -->
-  	<div id="banner">
+  	<div id="banner" class="module">
 		<div class="container">
 			<h1 class="name">Nikki Morley</h1>
 			<div class="title">UI Developer in Denver, CO</div>
@@ -36,7 +36,7 @@
 		 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
 		    	<span class="navbar-toggler-icon"></span>
 		  	</button>
-		  <div class="collapse navbar-collapse" id="mainNav">
+		  <div class="collapse navbar-collapse mr-auto" id="mainNav">
 		    	<div class="navbar-nav">
 			      	<a class="nav-item nav-link" href="#banner">Top</a>
 			      	<a class="nav-item nav-link" href="#about">About</a>
@@ -49,15 +49,45 @@
 	</nav>
 
 	<div id="about" class="module">
-		<div class='container'>
+		<div class="container">
 			<h2>About Me</h2>
-			<p>I am a UI Developer out of Denver, Colorado. </p>
+			<div class="row">
+				<div class="col-lg-3">
+					<img src="img/headshot.jpg" alt="Photo of Nikki" class="img-fluid">
+				</div>
+				<div class="col-lg-9">
+					<p>
+						I am a UI Developer out of Denver, Colorado. I have a passion for both the creative side of design and the logical problem solving side of code. If I can design and build something clean, intuitive, and meets the user goal, this is the ultimate reward.
+					</p>
+					<p>
+						My career started back in 2008 as a graphic artist working primarily on graphics for promotional products and apparel. Since then, my career path has allowed me to obtain a diverse set of software, technical, and soft skills.
+					</p>
+					<p>
+						In my free time I enjoy exploring our planet, crafting, and learning new things.
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="skills" class="module">
 		<div class='container'>
 			<h2>My Skills</h2>
-			<p></p>
+			<nav class="nav nav-tabs" id="skillsNav" role="tablist">
+			  <a class="nav-item nav-link active" id="tabTech" data-toggle="tab" href="#contentTech" role="tab" aria-controls="contentTech" aria-expanded="true">Technical</a>
+			  <a class="nav-item nav-link" id="tabSoftware" data-toggle="tab" href="#contentSoftware" role="tab" aria-controls="contentSoftware">Software</a>
+			  <a class="nav-item nav-link" id="tabSoftSkills" data-toggle="tab" href="#contentSoftSkills" role="tab" aria-controls="contentSoftSkills">Soft Skills</a>
+			</nav>
+			<div class="tab-content" id="skillsNavContent">
+			 	<div class="tab-pane fade show active" id="contentTech" role="tabpanel" aria-labelledby="nav-home-tab">
+			  		Sup Bitches
+				</div>
+			 	<div class="tab-pane fade" id="contentSoftware" role="tabpanel" aria-labelledby="nav-profile-tab">
+			 		wikka wikka wah
+			 	</div>
+			 	<div class="tab-pane fade" id="contentSoftSkills" role="tabpanel" aria-labelledby="nav-profile-tab">
+			 		Bow wow
+			 	</div>
+			</div>
 		</div>
 	</div>
 	<div id="work" class="module">

@@ -1,9 +1,9 @@
 // Import
-@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,600');
 
 
 //Variables
-$font: 'Archivo Narrow', sans-serif;
+$font: 'Fira Sans', sans-serif;
 $ltteal: #29c0d1;
 $teal: #0094b2;
 $dkteal: #016678;
@@ -26,8 +26,10 @@ a {
 }
 
 .module {
-	padding: 25px 0;
-	height: 500px;
+	padding: 35px 0;
+	h2 {
+		text-align: center;
+	}
 }
 
 
@@ -39,12 +41,11 @@ a {
 	font-weight: 500;
 	text-align: center;
 	.name {
-		color: #ddd;
 		text-transform: uppercase;
-		font-size: 3rem;
+		font-size: 5rem;
+		font-weight: 200;
 	}
 	.title {
-		color: $ltteal;
 		font-size: 2.5rem;
 	}
 	.tagline {
@@ -58,6 +59,13 @@ a {
 
 #skills {
 	background: $dkteal;
+	#skillsNav {
+		background: #fff;
+	}
+	#skillsNavContent {
+		background: pink;
+		padding: 15px;
+	}
 }
 
 #work {
@@ -71,15 +79,16 @@ a {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-
+	#mainNav .navbar-nav {
+		justify-content: flex-end;
+		width: 100%;
+	}
 }
 
 // Medium devices (tablets, 768px and up)
 //Using this as a breakpoint in nikki.js
 @media (min-width: 768px) {
-	#mainNav .navbar-nav {
-		justify-content: flex-end;
-	}
+
 }
 
 // Large devices (desktops, 992px and up)
